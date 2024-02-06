@@ -67,4 +67,20 @@ These tags are like packages enclosing the content and essentially work together
 
 It is entirely possible to also have elements within elements and have them function. This called nesting. It allows you to apply multiple elements on one piece of content.
 
-When looking at HTML documents you'll start to realize that most HTML documents are just HTML elements nested within each other. 
+When looking at HTML documents you'll start to realize that most HTML documents are just HTML elements nested within each other. If you look at the structure you will mostly find that it looks like a tree with parents, children and siblings when looking at. 
+
+The browser can identify when such a structure is setup and will build a big family tree and show how it all relates to one another. This is called a DOM Tree. The DOM stands for Document Object Model. The DOM becomes very important when working with CSS and JavaScript.
+
+The DOM Tree is quite important when it comes to the user experience. 
+
+How we nest elements is very importants as it conveys what we are doing and how we will do it. Silly mistakes like not closing tags can have a huge impact on your HTML document.
+
+## Unit 3
+
+### HTML Capabilities
+---------------------
+
+**Troubleshooting and Debugging HTML Code**
+
+
+
