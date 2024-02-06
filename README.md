@@ -4,7 +4,8 @@
 
 ## Unit 1
 
-### <u>Intro To HTML</u>
+### Intro To HTML
+=================
 
 HTML stands for HyperText Markup Language. It is used in all froms of web technology. It is used for content output such as words, images, video, audio, forms and interactive experiences. It is a solid foundation for everything in the digital realm.
 
