@@ -23,18 +23,27 @@ The World Wide Web consists of three programming languages: HTML, CSS, JavaScrip
 **HTML** 
 
 HTML is used to markup the contents of a website and letting the user know about the various elements on the page/pages of a website.
+
 HTML is known as a declarative language. This means it has a very straightforward structure without any programming logic, loops, or functions.
 The magic lies in using the right vocabulary and declarations.
+
 HTML is very simple and because of that it is very resilient and robust. Even when you misspell and/or forget to add certain elements, HTML will still display your page and and try to guess what you meant with your mistakes.
+
 HTML can take a lot of abuse and still produce results.
 
 **CSS**
 
 CSS stands for Cascading Style Sheets and is responsible for the styling of the web page and how everything looks.
+
 CSS is responsible for the colors, fonts and the size of various elements. Animations and interactions can also be added to web pages to have a much cooler or just better appeal.
+
 CSS has some complexity to it though. If you have an error within your code the browser will skip that error and try to make the rest of your code work. So when you have errors it will still compile the best it can.
 
 **JavaScript**
 
+JavaScript is a programming language that creates interactivity within web pages. Websites that usually have cool and fancy complex interfaces are mostly/usually programmed in JavaScript.
 
+JavaScript is a bit complex compared to HTML and CSS but that complexity is all worth it when it comes to the functions that you can create with JavaScript. The only drawback with JavaScript is that, unlike HTML and CSS, if it encounters an error within it's code it won't compile or try to guess what you mean by the code you've inputted. For this reason, it is more fragile than HTML and CSS.
+
+You might be asking why we need multiple programming languages to create a website. The reason is because when you create a website it has to work for at least several years without any updates. The web runs
 
