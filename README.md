@@ -58,3 +58,8 @@ To make all of this possible, three programming languages are needed and that's 
 
 ### Text Formatting
 --------------------
+
+<u>**HTML Syntax**</u>
+
+HTML is a programming language used to bring structure to a web page, as previously touched on. To mark different elements, we use tags which are enclosed in greater-than and less-than symbols. These tags come in two types: opening tags and closing tags. For example, the opening tag for a paragraph is <p> and the closing tag is </p>.
+
