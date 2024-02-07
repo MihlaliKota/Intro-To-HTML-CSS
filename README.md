@@ -99,10 +99,43 @@ For the bold, the elements being used are `<b>` and `<strong>`. The `<b>` elemen
 
 **HTML Lists**
 
-We use different types of lists in HTML for different purposes. The types of lists are unordered lists, ordered lists, and definition lists or description lists.
+We use three different types of lists in HTML for different purposes. The types of lists are unordered lists, ordered lists, and definition lists or description lists.
 
-Unordered Lists
-===============
+*Unordered Lists*
+
+The use case for unordered lists is exactly as it sounds. The list does not exactly follow a specific order. It is the most commonly used list out of the three.
+
+To use this element we usually enclose any item of the list with an `<li>` element and once we are done enclosing all the texts with that element we nest all the items in a `<ul>` element which stands for unordered list.
+
+*Ordered Lists*
+
+The ordered list is quite similar to the unordered list with a slight difference. Instead of using the previous element to wrap all our items in a list, we use the `<ol>` element which displays a specific order and will show a numbered list to define this.
+
+*Definition Lists*
+
+The definition list is quite different to the unordered and ordered list in that it is used to define terms and shows their description.
+
+To create a definition list we need to wrap all the terms/headings in a `<dt>` element, which stands for definition term. After that, we wrap all descriptions in a `<dd>` element which stands for definition description. When you done wrapping all these elements in the correct order you gonna nest it in a `<dl>` element which stands for definition list.   
+
+**HTML Quotes**
+
+*Cite and Blockquotes*
+
+The HTML `<cite>` tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).
+
+The HTML `<blockquote>` element defines a section that is quoted from another source. Browsers usually indent these elements.
+
+To use these elements together we usually wrap a quote from another source or from a quote in the original context of the content  in a `blockquote` element and use the `<cite>` element to credit the person the quote is attributted to.
+
+*Inline Quotes*
+
+The `<q>` HTML element indicates that the enclosed text is a short inline quotation. Most modern browsers implement this by surrounding the text in quotation marks. This is like blockquotes with the slight difference of only using it on quotes that are short and don't need paragraph breaks.
+
+*The (Date) Time element*
+
+The `<time>` HTML element represents a specific period in time. It may include the datetime attribute to translate dates into machine-readable format, allowing for better search engine results or custom features such as reminders.
+
+**HTML Superscripts, Subscripts and Small Text**
 
 ## Unit 3
 
