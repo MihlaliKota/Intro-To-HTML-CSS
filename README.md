@@ -137,6 +137,14 @@ The `<time>` HTML element represents a specific period in time. It may include t
 
 **HTML Superscripts, Subscripts and Small Text**
 
+Superscripts, subscripts and small text are used to mark up text that has a different meaning to the overall content. Usually used to mark up copyright in the footer.
+
+For superscripts we use the `<sup>` element to display inline text as superscript. Usually used for mathematical formulas, ordinal numbers and superior lettering.
+
+For subscripts we use `<sub>` element to display inline text as subscript. Usually used for footnote numbers, mathematical formulas and chemical formulas.
+
+The `<small>` HTML element represents side-comments and small print, like copyright and legal text, independent of its styled presentation. 
+
 ## Unit 3
 
 ### HTML Capabilities
