@@ -152,5 +152,7 @@ The `<small>` HTML element represents side-comments and small print, like copyri
 
 **Troubleshooting and Debugging HTML Code**
 
+HTML code, like any other code, will encounter errors and this is where debugging comes in. Popular browsers like Firefox and Google Chrome offer
+
 
 
