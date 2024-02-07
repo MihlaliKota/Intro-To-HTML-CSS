@@ -77,7 +77,32 @@ How we nest elements is very importants as it conveys what we are doing and how 
 
 <u>**HTML Paragraphs**</u>
 
+The HTML `<p>` element defines a paragraph. This element has an opening tag of `<p>` and `</p>`.
 
+Paragraphs are usually shown as blocks of text but can also be any structural grouping of related content, such as images or form fields.
+
+Paragraphs are regarded as block-level elements.
+
+**HTML Headlines**
+
+HTML Headlines are usually used for various titles, headlines, and subheadings. Headlines play a crucial role into dividing the content into smaller and more digestible chunks for people to comprehend the content and structure of how the content is laid out.
+
+HTML Headlines come in six different types from `<h1>` to `<h6>`. These headlines will come in different sizes. The higher the number the smaller the size of the headline.
+
+**HTML Bold and Italics**
+
+There are four elements related to this, two for bold and two for italics. The aim for the bold and italics is to essentially emphasize words in paragraphs.
+
+For the italics, the elements being used are `<i>` and `<em>`. The `<i>` element is used to define a part of the text in an alternate voice or mood. The `<em>` is used to to define emphasized text.
+
+For the bold, the elements being used are `<b>` and `<strong>`. The `<b>` element is used to define bold text without any extra importance. The `<strong>` element is used to to define text with strong importance.
+
+**HTML Lists**
+
+We use different types of lists in HTML for different purposes. The types of lists are unordered lists, ordered lists, and definition lists or description lists.
+
+Unordered Lists
+---------------
 
 ## Unit 3
 
