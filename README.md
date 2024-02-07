@@ -102,7 +102,7 @@ For the bold, the elements being used are `<b>` and `<strong>`. The `<b>` elemen
 We use different types of lists in HTML for different purposes. The types of lists are unordered lists, ordered lists, and definition lists or description lists.
 
 Unordered Lists
----------------
+===============
 
 ## Unit 3
 
