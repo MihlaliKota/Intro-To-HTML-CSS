@@ -75,6 +75,10 @@ The DOM Tree is quite important when it comes to the user experience.
 
 How we nest elements is very importants as it conveys what we are doing and how we will do it. Silly mistakes like not closing tags can have a huge impact on your HTML document.
 
+<u>**HTML Paragraphs**</u>
+
+
+
 ## Unit 3
 
 ### HTML Capabilities
