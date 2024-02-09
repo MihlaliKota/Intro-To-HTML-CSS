@@ -152,7 +152,18 @@ The `<small>` HTML element represents side-comments and small print, like copyri
 
 **Troubleshooting and Debugging HTML Code**
 
-HTML code, like any other code, will encounter errors and this is where debugging comes in. Popular browsers like Firefox and Google Chrome offer
+HTML code, like any other code, will encounter errors and this is where debugging comes in. Popular browsers like Firefox offer tools that can assist you further by creating it's own version of your code and finding out the errors you have within your code.
+
+It will be displayed to you in different screens. These three screens hold different information about your code. When you open inspect or developer tools there will be HTML on the left and first screen, CSS on the middle screen and more options on the right screen.
+
+The left screen will showcase the HTML but more importantly it will showcase the Document Object Model (DOM) Tree created by the browser and will try to fix any mistakes you've made along the way. When these errors have been found, you simply head over to your code and fix it. 
+
+### HTML Attributes
+-------------------
+
+HTML also contains attributes. These attributes are used on elements and add more power to any of these elements.
+
+Certain attributes are specific to particular elements. While others work with some elements and not all of them.
 
 
 
