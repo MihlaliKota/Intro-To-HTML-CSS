@@ -220,8 +220,36 @@ Instead of relying on a regular space, HTML offers a special type known as a non
 
 Additionally, non-breaking spaces can be used to insert multiple spaces between words. While multiple spaces are typically ignored by the browser, non-breaking spaces are recognized, allowing for consistent spacing. HTML character entities, like non-breaking spaces, ensure precise display of desired characters on webpages.
 
+## Unit 4
 
+### HTML Navigation and Linking
+-------------------------------
 
+Let's dive into the captivating realm of web links. Nowadays, we hardly pause to think about them, encountering them everywhere online — from navigation bars to menu options, enticing teaser cards, and clickable article titles. It's become second nature.
 
+Now, let's wind back to the 1980s, when computer pioneers were pondering the groundbreaking concept of linking. They were captivated by hypertext, hypermedia, and the very idea of hyperlinks. Picture it: a special spot on a page that could whisk you away to a whole new world with just a click. Pretty mind-blowing, huh?
 
+This fascination endured for over two decades, from the mid-1960s to the early 1990s, until the birth of the web. Even the term "web" reflects this obsession with connecting disparate elements, weaving a complex network of interconnected information. Creating a link may be straightforward in terms of code, but its impact on computing, information exchange, and our modern world is truly profound.
 
+When creating a link, we use the A element, short for anchor, and include an href attribute with a URL enclosed in quotes. This URL determines where the link will take us. Between the opening and closing A tags, we can place text, images, or both to make them clickable. For instance, we can turn the phrase "this is a link" into a clickable link leading to example.com.
+
+By default, the A element is inline and can be inserted within a paragraph or any other text. However, links aren't limited to just text; we can also wrap them around images or more complex elements like teaser cards, allowing us to create a group of linked elements.
+
+URLs can be quite versatile. When linking to another website or a specific page on the web, you can use the entire URL, whether it has a trailing slash or not. These are called absolute URLs and must include the HTTP or HTTPS part, which stands for Hypertext Transport Protocol, defining the web's communication rules.
+
+The difference between HTTP and HTTPS lies in security, with the "S" in HTTPS denoting "Secure." While HTTP was common in the past, experts now recommend HTTPS for improved security. Modern browsers automatically add HTTPS:// when a domain like example.com is entered, prioritizing security.
+
+### HTML URL Pathways
+--------------------
+
+When making links, absolute URLs are just one choice. When linking to something within the same site and domain as the page with the link, you can opt for a relative URL instead. For instance, imagine you're working on a website called Awesome Dogs, set to launch at http://www.awesomedogs.com. However, you're currently tinkering with a local version of the site on your computer, adding a menu bar. Later, there will be copies of the site on various servers with different URLs for testing and review purposes.
+
+Using absolute URLs for all links would cause the browser to constantly try accessing pages or files at http://www.awesomedogs.com, which isn't ideal. When working locally, we want links to point to the local files, and when the site's copied to a testing server, links should direct to pages and files there. To achieve this, we need a way to skip the http://www.awesomedogs.com part of the URL but still guide the browser to the files.
+
+Creating a relative URL isn't just handy for the A element (linking); it's also a skill used for referencing image files, video files, CSS, JavaScript files, or any other file where a path is specified.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/65704da8-bd32-4fa0-8ed8-acaf39709736)
+
+When crafting a URL from scratch, it's important to understand file organization. Picture files neatly arranged into different directories or folders. For example, to link to a blog post from March 9th, the browser needs to search inside the "blog" folder and locate the "March-9.html" folder. Filenames come with extensions like .html, .jpg, .css, .js, while folder names are simply named, such as "blog" or "people."
+
+In a URL, slashes indicate delving deeper into the file structure or moving down a level. To create a relative URL, leave out the domain name but include the initial slash at the start. This signals the browser to start from the root level, the outermost top level. Alternatively, you can craft the path relative to the file where the link is written.
