@@ -193,7 +193,7 @@ ARIA stands as a potent asset, significantly boosting web accessibility. It meri
 ### Formatting HTML
 -------------------
 
-When using elements such as <pre>, <code>, or <textarea>, or adjusting whitespace handling via CSS, additional spaces and indentations can have significance. Typically, browsers don't concern themselves with more than a single space.
+When using elements such as `<pre>`, `<code>`, or `<textarea>`, or adjusting whitespace handling via CSS, additional spaces and indentations can have significance. Typically, browsers don't concern themselves with more than a single space.
 
 Programmers believe that code readability improves when comments are added to explain its purpose, typically inserted in HTML by typing `"<!--" at the start and "-->"` at the end. Although browsers ignore these comments, code editors like Notepad++ can display them or remarks in a grayed-out style, facilitating quick identification of commented-out code and reducing confusion when it behaves unexpectedly.
 
