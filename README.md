@@ -253,3 +253,45 @@ Creating a relative URL isn't just handy for the A element (linking); it's also 
 When crafting a URL from scratch, it's important to understand file organization. Picture files neatly arranged into different directories or folders. For example, to link to a blog post from March 9th, the browser needs to search inside the "blog" folder and locate the "March-9.html" folder. Filenames come with extensions like .html, .jpg, .css, .js, while folder names are simply named, such as "blog" or "people."
 
 In a URL, slashes indicate delving deeper into the file structure or moving down a level. To create a relative URL, leave out the domain name but include the initial slash at the start. This signals the browser to start from the root level, the outermost top level. Alternatively, you can craft the path relative to the file where the link is written.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/39e19975-dd52-47b9-890f-f965fe369f67)
+
+Here's an example to help grasp how URLs function. Picture a file named styles.css in a directory named CSS. Let's say we want to link to the logo.gif file, found in the images folder, from our CSS file. We've got two ways to write the URL:
+
+1. /images/logo.gif
+2. ../images/logo.gif
+
+The first version, /images/logo.gif, crafts a URL relative to the root level, meaning the browser starts searching for the file from the website's root. The second version, ../images/logo.gif, forms a URL relative to the file's location where the URL is written. The ".." followed by a slash signifies going up one level in the directory structure.
+
+So, the URL ../images/logo.gif means starting from the current location, moving up one level, finding the images folder, and then locating the logo.gif file inside it.
+
+Now, let's discuss relative and absolute URLs. When you encounter a URL like http://www.awesomedogs.com/people, it's actually seeking an index.html file inside the people folder. In web development, when a browser receives a URL pointing to a folder, it automatically seeks an index.html file and loads it. This lets us create a clean URL structure using folders. However, this method only applies to HTML files, not images or CSS.
+
+Crafting well-structured and graceful URLs for web pages is an art. Consider how your URLs affect user experience and search engine results. Carefully design URLs, just like any other content. Relative URLs can be incredibly useful, especially for projects shifting between servers.
+
+To sum up, URLs can be relative or absolute. Relative URLs are based on the current file's location, while absolute URLs start from the website's root. Leveraging folders and index.html files allows for clean and user-friendly URLs.
+
+### Navigation
+--------------
+
+Now that we've discussed links and URL structures, let's delve into popular methods for creating menus or navigation bars. Picture this: we want to craft a main menu bar for our website, comprising four links: home, people, prices, and contact.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/0f193867-f92c-4e45-9c7e-9c38f24583b5)
+
+Each link is placed within an element containing the correct URL and enclosed in an "li" element to form a list of links. To maintain order, wrap the entire list in a "ul" element, representing an unordered list. Finally, enclose the entire menu in a "nav" element to signify it as the site's navigation.
+
+To style the menu visually, apply CSS styling. Without styling, it appears as a plain list, but it's important for screen readers and assistive devices to recognize it as the main menu. Add attributes to convey its purpose: assign the role "navigation" to the "nav" element, indicating it represents the main navigation, and include an "aria label" for the main menu, offering a descriptive label for screen reader users. Remember, this isn't the only way to correctly markup a main navigation menu; there are various approaches depending on the situation.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/84ae754d-e26c-44ab-b303-fd7fd58d6279)
+
+Let's look at another menu style called a breadcrumb trail. Like the main menu, enclose the breadcrumb links in a "nav" element, but this time use an ordered list ("ol") because the order of the links is important. However, don't label this menu as "navigation"; instead, add an "aria label" of "breadcrumb" to give context when read aloud.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/a596de76-25c8-4fed-85f7-eb5a58310f45)
+
+Now, let's look at the links typically found in a page's footer. These links aren't part of the main site navigation. Simply mark each link as a link and wrap them in a "footer" element. No "nav" element or unordered list is needed here. It's a straightforward representation of two phrases linking to additional content.
+
+As we combine HTML elements, there are numerous options to explore. By carefully considering actions and combining elements to add semantic meaning to our content, we can make the right choices for our projects. Remember, there's no one-size-fits-all approach; it all depends on the specific circumstances and how you want certain elements to appear.
+
+
+
+
