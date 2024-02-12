@@ -1,3 +1,4 @@
+
 # Intro-To-HTML-CSS
 
 ## WEEK 1
@@ -291,6 +292,36 @@ Let's look at another menu style called a breadcrumb trail. Like the main menu, 
 Now, let's look at the links typically found in a page's footer. These links aren't part of the main site navigation. Simply mark each link as a link and wrap them in a "footer" element. No "nav" element or unordered list is needed here. It's a straightforward representation of two phrases linking to additional content.
 
 As we combine HTML elements, there are numerous options to explore. By carefully considering actions and combining elements to add semantic meaning to our content, we can make the right choices for our projects. Remember, there's no one-size-fits-all approach; it all depends on the specific circumstances and how you want certain elements to appear.
+
+## Unit 5
+
+### HTML Working with Graphics and Images
+-----------------------------------------
+
+**Images**
+
+Without images the internet wouldn't be as entertaining as it is today. To add an image to a webpage you use the image element `<img>` with added attributes.
+
+The added attributes are crucial for the image element. We have four attributes and those attributes are the source (src) attribute, the alt attribute and lastly the width and the height attribute.
+
+The source attribute tells the browser which image to load. The alt attribute provides a text description of the image. The width and height attribute determine the size of the image.
+
+When adding an image you need to add an alt attribute. This is very important for people with visual impairment. They can use a screen reader that reads the ALT text aloud to them.
+
+When writing the ALT text you need to of course describe the picture but make it interesting. You can even make it funny or poetic. Just don't decribe it as a photo or make it lengthy. 
+
+Sometimes it is better to leave the alt blank if you gonna repeat yourself or the alt interferes with the picture. 
+
+### Image Formats
+-----------------
+
+Image formats are very important when it comes to finding a file format that browsers can understand. New formats are constantly created to find the perfect balance between small file sizes and visually stunning images. We need a huge amount of data to make an image stunning but we also want to minimize the data to ensure faster downloads and prevent excessive data usage for users. Each file format has a different approach to achieve this but the goal is similar. Essentially, we aim for the highest possible quality with the smallest file size achievable.
+
+There are four main file formats commonly used on the web with their own weaknesses and strengths. These formats are GIF, SVG, PNG and JPG.
+
+The 
+
+
 
 
 
