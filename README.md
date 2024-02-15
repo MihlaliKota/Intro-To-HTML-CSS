@@ -332,6 +332,9 @@ PNG (Portable Network Graphics) is a modern image format that supports transpare
 
 CSS provides a solution for adjusting image sizes to fit various screen sizes, but a challenge arises with large, high-resolution images that have hefty file sizes due to their data volume. This can be problematic for users with slow internet connections or limited data plans as it takes longer to download and can incur higher costs. To tackle this issue, one option is to reduce the size of all images by physically shrinking them, decreasing colored data, and further compressing them, which is effective for smaller screens. However, this approach affects all users, resulting in lower-quality, enlarged images for those with larger desktop monitors. Alternatively, you could opt to keep images small, which may limit your web design options.
 
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/1b7bf596-529b-4a1d-9c33-01d02df580d9)
+
+
 HTML enables the delivery of various image files to screens of varying sizes. By including multiple image options in the HTML code, browsers, in conjunction with the operating system, consider the device's hardware capabilities and network speed to determine the most suitable image to download. 
 
 To begin, let's start with the basic HTML code for loading an image on a webpage. We use an image element with attributes like source (src), ALT text, width, and height to help identify the loaded image. The image we're using here is 480 pixels wide and looks good when displayed at that size or smaller on certain devices. However, many screens today have higher pixel densities, such as 2X, 3X, or 4X, which allow for more detailed displays. For example, older computers typically have a 1X screen, while newer ones have 2X screens, and cellphones often have 3X screens. Our goal is to ensure our photos look good on all of these screens.
@@ -341,3 +344,19 @@ To support these different screens, we create multiple copies of an image with v
 To illustrate this, let's consider four copies of a photo at different widths: 480, 960, 1440, and 1920 pixels. We duplicate the basic HTML code for displaying the image to make changes and compare the results. We write the code in the usual way, which works well for older browsers, including the source attribute pointing to the 1X version of the image, ALT text, width, and height.
 
 To provide the browser with choices, we simply add a source set attribute. Inside it, we list the images on offer, separated by commas. Each entry includes a URL to the file, the resolution (e.g., 2X, 3X, 4X, 1.5X), and so on. The browser then swaps out one version of the image for another based on what it considers best. This technique is ideal for handling different image sizes for retina and high DPI screens.
+
+
+### Responsive Width
+--------------------
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/619ca3a5-d28e-4c8f-b14c-9baa069fe013)
+
+
+In this scenario, we're continuing from the previous example where we listed four images in the src set attribute. However, instead of specifying pixel density like 1x or 2x, we're indicating the width of each file: 480w for an image 480 pixels wide and 960w for an image 960 pixels wide.
+
+Now, the browser determines which image to display based on both the device density and the viewport width. However, this approach can pose a problem when the chosen image doesn't fit the desired layout. The browser makes this decision early in the loading process, before it has knowledge of CSS or layout details, and it's unaware of the size of the box where the image will be placed.
+
+To address this issue, we can provide the browser with more information to make a better choice. We use the sizes attribute in HTML to specify which image to use at different breakpoints. This way, the browser can download the appropriately sized image for our layout.
+
+HTML offers powerful options like src set, allowing us to provide a range of images for different resolutions or let the browser choose based on density and viewport width. The sizes attribute enables us to specify how much of the viewport's width the image will occupy at each breakpoint. By furnishing this information in the HTML, we assist the browser in making an informed decision, taking into account network conditions and user preferences.
+
