@@ -360,3 +360,109 @@ To address this issue, we can provide the browser with more information to make 
 
 HTML offers powerful options like src set, allowing us to provide a range of images for different resolutions or let the browser choose based on density and viewport width. The sizes attribute enables us to specify how much of the viewport's width the image will occupy at each breakpoint. By furnishing this information in the HTML, we assist the browser in making an informed decision, taking into account network conditions and user preferences.
 
+### Responsive Pictures
+-----------------------
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/b592751b-c2b7-41d8-bcba-f02246af85e1)
+
+What if you want to display a different image on a small screen compared to a large screen? For instance, we might want the image to appear tall and narrow on mobile devices, while being short and wide on desktop computers. We could even opt to use an entirely different photo altogether.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/1967bd2e-fbfd-46ac-b588-d699fa292147)
+
+Let's dive into another example. Imagine you have a photo that needs to be displayed differently on various screens: you want to show the whole scene on big screens but focus only on the person's face on smaller ones. Simply using the image element won't suffice, even with added attributes like source set or size. This is where the picture element comes into play.
+
+First, use the image element with ALT text and a URL to the image file to ensure compatibility with older browsers like Internet Explorer 11. Then, wrap this image element with the picture element, acting as a wrapper for the setup. Within the picture element, list alternative options using the source element, providing two options by creating two source elements.
+
+1. For the first source element, use the source set attribute to point to a mobile image file, a cropped version sized at 320 pixels wide. This version will load when the viewport is smaller than 600 pixels.
+2. For the other source element, use a kind of media query to specify the image for larger screens, loading the landscape version when the viewport is at least 600 pixels wide. This allows you to optimize the image for different screen sizes efficiently.
+
+In this explanation, we utilized the "source set" attribute in the source element, similar to how it's used in the image element. This means we can apply what we've learned from previous sections to this situation. Various techniques like picture, source, and source set were employed, providing multiple file options for each source set, indicating to the browser how wide each file is. The browser smartly switches between files, using larger ones only when necessary, considering both the viewport size and the retina screen. When the viewport reaches 600 pixels wide, it seamlessly switches from the cropped version to the wide version.
+
+This is why we use these HTML techniques to make images look great on the web while keeping file sizes small.
+
+You might think creating all these files sounds like a lot of work. It does involve some math, but on most websites, the process is automated. Content contributors upload one large image, and server robots handle creating the necessary image files and writing the code. Setting this up might be your responsibility, but once done, everyone benefits.
+
+The effort is worth it. In this demo, image files range from 27k to 593k, saving half a megabyte per photo. If a web page has six photos, that's three megabytes of data saved for users. It's a significant improvement.
+
+### Figcaption and Figures
+--------------------------
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/afe227f2-f0f6-4d6d-92c6-94368d6a1665)
+
+First, show a picture of the dog and add a caption to it. Use the figcaption element to wrap the text and designate it as a caption. Then, put the image and the caption together in a figure element. This gives the browser more information about the content, like the relationship between the image and the caption. It is not just a regular paragraph or a generic div. This way, search engines and AI can understand that these two pieces of content are connected. 
+
+Figures can be used for more than just images, too. For example, use them for an interactive graphic. Place it in the same spot where the image element is in the code. The figure and figcaption elements are really useful for anything that serves as a visual illustration or a demonstration of a concept that needs a caption.
+
+## Unit 6
+
+### Working With Media
+----------------------
+
+**Working With Audio**
+
+The audio element is different from the image element because it has both an opening and a closing tag. This makes it more modern and gives it more power and flexibility. Just like the image element, we use a source attribute to provide the URL of the audio file.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/19e274b5-960c-4943-896c-25dd0cdd97bc)
+
+There are different audio file formats to choose from. For now, link to an MP3 file. But what does this actually do? Well, nothing useful yet. We need to let the browser know that we want it to provide some controls like a play button, timeline, and volume control. Using the browser's built-in controls is optional.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/d3ab9fca-b0bb-44aa-b779-bbfb276ab5b6)
+
+Instead of using pre-built audio player controls, you have the option to create your own using JavaScript and the HTML media element API. However, for this exercise, we'll keep things simple and just add the "controls" attribute. When this attribute is present, it means we want the controls, so voila! Now there's an audio player on the page. This allows us to play, pause, adjust volume, see the time, and navigate through the timeline. The audio element showcases the power of HTML by providing a range of functionality without needing to build it from scratch.
+
+You might wonder why there's both an opening and closing tag for the audio element. Well, that's because the source element can be used to specify multiple audio files, similar to how the picture element was used.
+
+This can be helpful if a new file format is used that isn't supported in all browsers while providing a fallback for older ones. To achieve this, remove the source attribute from the audio element and place it on a separate source element. This achieves the same outcome as the previous example but allows for the addition of other source elements with alternative audio file formats.
+
+MP3s are widely supported in modern browsers, while OGG had some advantages but didn't gain much popularity. There may be a new format on the horizon, similar to the AV1 video file format, but it's not widely available yet. For this reason, there's currently no recommended second audio format. Nevertheless, it's important to understand the syntax for supporting multiple formats, as it was crucial in the past and will likely be useful again in the near future.
+
+Furthermore, you can provide fallback text within the audio element, which will only be displayed if the browser doesn't understand the audio element at all. This demonstrates the resilience of HTML, where a single set of code can cater to a wide variety of browsers and provide a suitable user experience. The audio element is an excellent tool for embedding audio files and a player on a webpage.
+
+### Working With Video
+----------------------
+
+The internet has revolutionized how we connect and share content like movies, TV shows, and educational resources. With the power of the web, embedding videos onto web pages has become effortless using the HTML video element.
+
+Similar to the audio element, the video element also consists of an opening and closing tag. To display a video, simply use the source attribute to specify the video file. Additionally, adding the controls attribute automatically generates a video player by the browser. Seems straightforward, doesn't it? However, there are a couple of considerations that need attention.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/907a7b09-8389-4af7-870d-819129a52a3f)
+
+The first issue revolves around video encoding. In this example, a video file with 480p resolution has been created, compressed using the H.264 codec, and delivered as an MP4 file. 480p signifies the video's resolution of 720 pixels wide by 400 pixels tall, considered standard quality. H.264 was chosen due to its widespread browser support. 
+
+Similar to image formats, such as PNG or JPEG, video files use different codecs for encoding. Since video files contain vast amounts of data, compression is necessary to efficiently transmit them over the internet. Various codecs, like Real Video, Sorenson, Windows Media, Flash, and H.263, have been developed over the years. Until recently, H.264 dominated the scene, despite being proprietary and subject to licensing fees. Efforts are underway to develop an open and non-patented video codec, with AV1 emerging as a promising contender. HTML's video element allows for the inclusion of multiple source files, enabling the use of different codecs like H.264, WebM, and eventually AV1.
+
+The second challenge relates to accommodating users with varying screen sizes and network speeds. While HTML lacks a built-in mechanism for sending different video sizes based on network conditions, major streaming platforms use adaptive bitrate streaming to address this issue. This involves a server farm of transcoding robots that ensure seamless switching between different resolutions as users watch videos. Due to the complexity involved, websites often rely on embed codes from video hosting services instead of directly employing the video element, simplifying the process and leveraging the capabilities provided by such services.
+
+### Working With Captions And Subtitles
+---------------------------------------
+
+It's incredible how we can add audio and video to websites, but not everyone can fully engage with this content. Some people may be deaf, while others may have intermittent hearing or difficulty understanding due to various factors. Additionally, even those who can hear may not always find it convenient to listen.
+
+For instance, you might want to watch a video, but using speakers or headphones isn't feasible in certain locations. Alternatively, you might struggle to understand due to the speaker's accent or fast pace. Right now, you might be facing one of these challenges while using captions for a video. Fortunately, the web empowers us to provide content in multiple ways simultaneously.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/ad8adbdd-ebdc-4d3d-9ea5-7ae4cacf4686)
+
+We'll utilize the track element to link it to a text file and add captions to the video. This enhances the video player's functionality, allowing viewers to toggle captions on and off or switch between different subtitle options. On the web, we'll use a file format called WebVTT (Web Video Text Tracks), a simple text file with a .vtt extension that follows a specific convention for providing information. Each line of text in the file is accompanied by a time code, indicating when it should be displayed in the video.
+
+To display these captions on the video, insert a track element within the video element. Similar to the source element, it's one of the options the browser uses to render the video player. On the track element, use the source attribute to specify the file, the kind attribute to indicate that it contains captions, and a label attribute to display the caption option as "English" in the player. Additionally, use the source lang attribute to indicate the language and add a default attribute to make this track the default choice when captions are enabled.
+
+Clicking on the captioning icon reveals options for turning captions off, enabling automatic captioning, or selecting English captions, based on the label set. To provide a different subtitle option like Spanish, create another vtt file for Spanish and add another track element to the video element. Set the kind attribute to "subtitles," the source lang attribute to "es" for Spanish, and the label attribute to "Español." Now, a second choice for subtitles appears in the list, including Spanish subtitles.
+
+The kind attribute offers other options too. For example, using "descriptions" allows us to create a vtt file describing visual elements for visually impaired users. "Chapters" provide a text file listing different sections of the video, allowing users to jump to specific parts.
+
+Platforms like YouTube or Vimeo allow uploading caption files and provide similar functionality. Captions and subtitles are not only powerful but also often legally required, making content more accessible and potentially expanding the audience base. Adding captions can lead to increased traffic!
+
+### Embedding Media via Iframes
+-------------------------------
+
+There's a wide array of content that can be embedded on a webpage, such as maps from Google or Mapbox, code demos from CodePen or Glitch, or slide decks from Speaker Deck or Notist. It's common to embed complex content from a service that manages the technical aspects. Rather than creating a mapping service, slide deck system, code demo platform, or adaptive bitrate server from scratch, you can leverage someone else's toolkit and embed the results onto your website. So, what HTML knowledge is required to facilitate this process?
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/f05e8162-02ee-4705-a3e1-e1269e2fbbdb)
+
+Understanding every detail isn't necessary because YouTube's engineers have handled it. However, with HTML knowledge, you can recognize key elements. For instance, the iframe element has attributes like height and width that you can adjust, and the src attribute specifies the video file's source. Although iframes are powerful, we must consider security concerns when embedding code from other websites.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/1d8affcc-bc84-4199-bc27-dc2bc67f67f1)
+
+When working with a content management system (CMS) like WordPress or Drupal, set up by someone else, copying and pasting random embed codes from other websites might not be straightforward. These CMS platforms typically have specific methods for allowing URLs or shortcodes from trusted sources. For embedding items like YouTube videos, it's advisable to seek guidance from someone proficient in using the CMS.
+
+When constructing a website, it's crucial to consider security implications related to the iframe element. If multiple individuals will be contributing content to the system, it's important not to indiscriminately allow all iframes without considering security measures. However, if you're the sole contributor posting videos on the website, security concerns are less pressing.
