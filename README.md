@@ -293,6 +293,8 @@ Now, let's look at the links typically found in a page's footer. These links are
 
 As we combine HTML elements, there are numerous options to explore. By carefully considering actions and combining elements to add semantic meaning to our content, we can make the right choices for our projects. Remember, there's no one-size-fits-all approach; it all depends on the specific circumstances and how you want certain elements to appear.
 
+## WEEK 2
+
 ## Unit 5
 
 ### HTML Working with Graphics and Images
@@ -466,3 +468,142 @@ Understanding every detail isn't necessary because YouTube's engineers have hand
 When working with a content management system (CMS) like WordPress or Drupal, set up by someone else, copying and pasting random embed codes from other websites might not be straightforward. These CMS platforms typically have specific methods for allowing URLs or shortcodes from trusted sources. For embedding items like YouTube videos, it's advisable to seek guidance from someone proficient in using the CMS.
 
 When constructing a website, it's crucial to consider security implications related to the iframe element. If multiple individuals will be contributing content to the system, it's important not to indiscriminately allow all iframes without considering security measures. However, if you're the sole contributor posting videos on the website, security concerns are less pressing.
+
+## Unit 7
+
+### HTML Content Identification
+-------------------------------
+
+The internet is used worldwide and in many languages. In HTML, there are tools to specify the language of your content. This helps search engines, spell checkers, and browsers interpret the content accurately, ensuring correct pronunciation when read aloud. It's crucial for computers to identify the language of the content they're dealing with.
+
+The lang attribute in HTML is used to indicate the language of a webpage. When the entire page is in one language, simply set it on the main HTML element. It's important to be specific, like using "en-US" for U.S. English, for features such as spell checkers. For pages with multiple languages, specify the language for each part of the content using the lang attribute on relevant elements. Also, use the dir attribute to specify the content's direction, especially for languages that flow from right to left.
+
+Don't forget to set the character set (charset) for your project. Each language uses its own set of characters, and nowadays, Unicode, especially UTF-8, is commonly used to support various characters and emojis. To ensure proper display, include a meta charset tag with UTF-8 in the head element of every page. This prevents browsers from displaying content incorrectly. By specifying the charset, you contribute to a more inclusive web that supports diverse languages and scripts.
+
+### HTML Generic Elements, Div and Span
+---------------------------------------
+
+Sometimes, we encounter situations in HTML coding where existing elements don't fit our needs. In such cases, we turn to two flexible elements: div and span. These elements are commonly used for grouping elements, emphasizing text, or targeting specific parts of the DOM with CSS or JavaScript. As a developer, you've likely encountered and utilized div and span elements in your HTML coding journey.
+
+Before HTML5 introduced semantic elements, divs were commonly used for various purposes like creating sections and sidebars. Despite the availability of semantic HTML, divs and spans are still overused in HTML coding. These notes emphasizes the importance of using semantic HTML to improve accessibility and code organization.
+
+While it's technically possible to use divs and spans for everything, it's not recommended. This practice can negatively impact users and should be avoided. Instead, developers should opt for the appropriate HTML elements to improve code quality.
+
+Although divs and spans are generic elements, they have distinct roles: div is a block-level element, while span is an inline element. They don't have any inherent functionality until styled with CSS or manipulated with JavaScript.
+
+Imagine a basic article with a headline and four paragraphs enclosed in an article element. If you want to style only the paragraphs with a background color, introduce a div with the class "boxes" and apply CSS changes to that class. Div and span are handy elements when there's no better alternative, serving as last resort options. For instance, use span to mark a specific phrase, like changing its language attribute to Spanish. Both div and span support global attributes like class, id, lang, and aria roles. Use these elements judiciously.
+
+## Unit 8
+
+### HTML Intergration
+---------------------
+
+**HTML Page**
+
+HTML is essential for structuring content on websites and web apps, going beyond mere explanation of elements and attributes. HTML files are integral parts of the web.
+
+When you visit a website, you use a web browser or web view and enter a URL. This URL can be typed directly, clicked from a search result or link, or triggered by an app. In all cases, a URL is involved, and the web server responds by sending the specific HTML file located at that address.
+
+Initially, webpages were contained in a single HTML file along with images, but modern web development is more intricate. Text is often stored in databases, and various files like HTML, CSS, JavaScript, images, videos, audios, and ads are combined dynamically for each user.
+
+When a user accesses a URL, the server sends a single HTML file, serving as the core of the webpage. The browser reads this file and follows its instructions, initiating a consistent loading process.
+
+Upon receiving the HTML file, the browser immediately reads and follows its instructions, fetching additional files like CSS, JavaScript, and images. Once all necessary files are retrieved, the browser executes their instructions, resulting in the rapid generation of a complete webpage.
+
+Understanding the structure of an HTML file is vital for web development. Despite code distribution in templates or theme files, certain key components are integral to every webpage.
+
+Start with a doctype statement to signify a modern webpage adhering to best practices. The HTML element wraps all content, specifying language and text direction. Within this structure, include the head for browser metadata and the body for visible content using various elements.
+
+The doctype declaration, HTML head, and body elements form the essential framework of every webpage.
+
+### Document Head
+-----------------
+
+The head section of a webpage holds crucial information for the browser, such as specifying the character set using the meta element with the character set attribute set to UTF-8. Although this information isn't visible to users, it's essential for proper browser rendering.
+
+Meta elements, including the character set declaration, should be placed solely within the head section as they provide metadata about the page. Also, every webpage must include a title element, even though it's not visible to users.
+
+The title of a webpage, specified in the title element, is displayed on the browser tab or bookmark and under top sites in a new browser. It's the name the browser uses whenever referencing the page. Now that we've covered the essentials of HTML pages, let's explore additional options within the head section.
+
+The meta element has multiple uses, such as making a website responsive for small screens, providing a description for search engine results, and assigning a name when saved to the home screen. It also specifies a tile image and background color, enhancing the appearance of shared links on platforms like Slack, Asana, or Twitter. Various techniques utilize meta tags to improve the user experience of a website.
+
+The link element is essential in the head section, connecting assets like CSS files, fonts, and favicons. It uses attributes like rel to specify the asset type and href to indicate the asset's URL. For instance, rel="stylesheet" is used for CSS files, and the order of listed assets determines their loading sequence. Prioritize essential items at the top for faster loading, while less important items can be listed further down.
+
+The script tag is a commonly used element in an HTML document's head. It instructs the browser to load a JavaScript file. Although it is typically placed at the end of the document, some also include it in the head. 
+
+### Content Structuring
+-----------------------
+
+**Main**
+
+The main element is used once per webpage and tells the browser where the main content is located.
+
+**Header**
+
+The header and footer elements mark the header and footer areas on the page. Do not confuse header with head though. Head is where the file's metadata lives and is not displayed to users. Header is used for site headers, article headers, and headers within the content. A header is usually found at the top of most web pages and may include a logo, site name, and navigation.
+
+**Footer**
+
+The footer signifies that there are extra things to convey, regardless of its position on the page.
+
+**Article**
+
+An article often starts with a title, subtitle, author's name, and publication date, which can also be considered a header. Many web pages end with a footer at the bottom, containing links, copyright information, and additional details about the company. However, footers can also appear elsewhere. Some articles begin with metadata like hashtags or share buttons, which are suitable for a footer element. The article element wraps around any type of content unit, whether it is a long written article, a short snippet, a teaser card, a tweet, or even an app element. It represents a standalone unit of content.
+
+**Section**
+
+The section element is used to mark sections of content. For example, in a long essay with subheadings, each segment can be wrapped in a section element. It is also useful for dividing different topic zones on a website. Each section typically starts with its own headline.
+
+**Aside**
+
+Lastly, the aside element is for content that is off to the side, like sidebar information or additional details that accompany an article but are not part of its main flow. Advertisements can also be marked as an aside. Although the position on the page does not matter, the semantic meaning of these elements is crucial. The visual layout often conveys meaning, and these HTML elements help transfer that meaning from the design to the content.
+
+### When It All Comes Together
+------------------------------
+
+Assembling web pages involves nesting multiple elements, each conveying meaning and interacting with others to form the whole. When uncertain about the best way to mark up a page, explore similar sites and use developer tools to observe how HTML elements are used. The combination of HTML elements varies for each webpage, depending on its content and purpose, making it challenging to ensure correctness. Structuring HTML involves some art and creative freedom, as we aim to represent human communication in code, which isn't always straightforward or perfect.
+
+## Unit 9
+
+### Working With Forms And Interactive Elements
+-----------------------------------------------
+
+**Form Fundamentals**
+
+Form fields play a vital role on the web, used for tasks like logging in, making purchases, and conducting searches. It's best to use semantic form elements in HTML instead of divs and spans because it allows us to utilize the browser's built-in functionalities. This saves time and effort by avoiding the need to recreate functionalities already available in the browser. Moreover, using HTML form elements ensures compatibility across all devices and input/output hardware, even those we may not be familiar with.
+
+To create a form in HTML, start with the form element, which indicates the presence of a form. For a newsletter signup form, include fields for name and email, labeled using the label element. Use the input element to allow users to input their name and email. Unlike other elements, input doesn't have a closing tag and marks where browser functionality is placed.
+
+Include a button element for form submission, with customizable text. However, the form lacks functionality until connected to a backend. Add action and method attributes for demo purposes, but using the "get" method is insecure for real websites. Ensure the input fields have a "name" attribute to report data.
+
+### More Form Functions
+-----------------------
+
+We need to make a form for gathering name and email information for signing up for an email newsletter. Right now, both input fields accept any text input, including the email field. This happens because we haven't specified the type of input required for these fields to the browser yet.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/433db0a1-e889-486f-8b54-1e99c0350a8b)
+
+Improve the form by adding the "type" attribute to each input. Use "text" for the name field and "email" for the email field to ensure valid data entry. Mark the button as "submit" and make the email field mandatory by using the "required" attribute.
+
+Provide default text suggestions using the "placeholder" attribute, which disappears when clicked. Pre-populate fields with real content using the "value" attribute, commonly used for auto-completing forms with user information. Remember that placeholder text isn't submitted, while pre-populated values are.
+
+By utilizing HTML effectively, ensure forms are user-friendly and clear. Next, we'll explore various types of forms beyond text and email.
+
+### Other Form Element Types
+----------------------------
+
+While knowing the basic form structure is crucial, there are many options for collecting different data types. Forms don't have to be unattractive; using CSS can style them to look better than plain text boxes. By using proper semantic HTML elements, forms can be customized for a unique appearance and experience.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/0c206ddf-f67b-4b9b-8917-e9cb4894735b)
+
+Adding more fields like password, search, and phone number to the form showcases different input types. Password fields trigger warnings in browsers when used on unsecured sites (HTTP instead of HTTPS). Search fields may have a distinct appearance and keyboard layout in some browsers, while phone number fields prompt devices to display a telephone pad for easier input. For longer text passages, the text area element is used, providing a resizable box for multi-line input.
+
+Further, input types like date, color, and file offer specific functionalities. The date type provides a date interface, color opens a color picker, and file allows file uploads, with additional attributes like "accept=image" limiting acceptable file types to images. The "multiple" attribute enables the selection of multiple files if needed.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/5b0e4cff-d454-4774-a935-a4705efdc26f)
+
+Examples of checkboxes, select lists, and radio buttons showcase different HTML form elements. Checkboxes are created with a label and input, set as type "checkbox," and can start as checked by default with the "checked" attribute. Provide a value for the checkbox input to submit when the form is submitted, although this value doesn't show on the form itself.
+
+Select lists are made using the select and option elements. For checkbox or radio button sets, specify the type attribute accordingly and wrap labels and inputs in a fieldset with a legend.
+
+This introduction offers a glimpse into the diverse HTML form elements and their utilization of browser software and operating systems across various devices.
