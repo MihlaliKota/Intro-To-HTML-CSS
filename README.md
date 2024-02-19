@@ -607,3 +607,37 @@ Examples of checkboxes, select lists, and radio buttons showcase different HTML 
 Select lists are made using the select and option elements. For checkbox or radio button sets, specify the type attribute accordingly and wrap labels and inputs in a fieldset with a legend.
 
 This introduction offers a glimpse into the diverse HTML form elements and their utilization of browser software and operating systems across various devices.
+
+## Unit 10
+
+### Organizing Tabular Information
+----------------------------------
+
+**HTML Tables**
+
+Contrary to some beliefs, HTML tables are not inherently evil. They should be used when presenting tabular data. However, the issue arises when these table elements are misused, such as trying to create a layout that isn't tabular in nature. Semantic HTML aims to accurately represent content to computers. If something is a table, it should be marked up as such. The confusion around HTML tables might stem from misconceptions or misunderstandings.
+
+In the early days of the web, CSS didn't exist, making it difficult to style and layout content. To create visuals, people used Photoshop to generate images for headlines, resulting in inaccessible and non-reusable content. Another workaround was breaking content into pieces and placing them in HTML tables' cells, despite being a flawed approach with poor semantics.
+
+This outdated technique is still used in HTML email due to limitations. However, it creates a poor user experience. HTML tables should primarily be used for tabular data. Despite their misuse in the past, modern web development practices focus on using CSS for layout and styling, while HTML tables are reserved for presenting structured data.
+
+HTML tables are best used to convey structured data, similar to how tables are used in documents or spreadsheets. They're suitable for presenting information in rows and columns, such as comparing prices, displaying population data, or showing election results. Tables aren't limited to numerical data; they can include text, images, or other content, as long as there's a semantic reason for organizing it into a table.
+
+The decision to use an HTML table depends on whether the content benefits from revealing relationships between data cells and headers. If the nature of the information calls for it, a table should be used to semantically mark it up. CSS can be used to adjust the table's layout for different screen sizes, allowing flexibility in its appearance. Ultimately, what matters is accurately representing the structured data using HTML tables.
+
+To construct an HTML table, you combine various HTML elements: Table, TR, TH, and TD. The Table element encompasses the entire table, marking its start and end. TR represents a table row, grouping elements together to form a row. TH signifies a table header, defining the header for a column. TD represents table data, marking cells containing data within the table. Here's an example of the basic structure of an HTML table:
+
+The `<table>` element wraps around the entire table.
+Inside the table, `<tr>` elements define rows.
+Within each row, `<th>` elements are used for header cells.
+For non-header cells, `<td>` elements are used.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/1c8a5149-993d-4162-ae77-caf1732d1be8)
+
+
+Let's create a simple HTML table using a basic example. We start with a <table> element to define the table and close it at the end. The table has six rows: one for the header and five for different types of birds. Each row is marked up with <tr> tags. Inside each row, we use <td> tags to contain the data for each column, like the bird's name, color, diet, and an image.
+
+To style the table, we can apply CSS to customize its appearance instead of relying on the browser's default styling. For the header row, we use <th> instead of <td> to mark it as a header cell. We don't need to use all caps for the header content; regular words are fine, and we can style them with CSS as needed.
+
+These are the basics of creating an HTML table: using the <table> element to start the table, <tr> for rows, <th> for header cells, and <td> for data cells. There are more advanced features like spanning rows or columns, defining table sections, or adding captions, which can be explored in deeper HTML table tutorials.
+
