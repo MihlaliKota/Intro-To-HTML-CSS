@@ -641,3 +641,26 @@ To style the table, we can apply CSS to customize its appearance instead of rely
 
 These are the basics of creating an HTML table: using the <table> element to start the table, <tr> for rows, <th> for header cells, and <td> for data cells. There are more advanced features like spanning rows or columns, defining table sections, or adding captions, which can be explored in deeper HTML table tutorials.
 
+## Week 3
+
+## Unit 1
+
+### Introduction to CSS
+-----------------------
+
+**What Is CSS?**
+
+A style sheet, often called a CSS file, contains all the styles for a webpage, enhancing its visual appearance. To connect HTML and CSS, you link them together. HTML and CSS are closely related and collaborate closely to enhance web design. Before delving into CSS, let's briefly review HTML.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/a446defd-69b1-48a8-9ab3-30b106eea6ec)
+
+HTML defines the structure of a webpage using elements like paragraphs, headings, lists, and links. When viewed in a browser, raw HTML appears unattractive due to default styles like Times New Roman font and blue underlined links. To improve appearance by changing fonts, colors, and spacing, CSS is needed. CSS has two main parts: the selector, which identifies patterns in HTML, and the declaration block, which applies styles to matching HTML elements. Multiple styles can be applied to the same pattern, known as cascading, but this course will focus on simpler aspects of CSS without delving into cascading.
+
+### CSS Components
+------------------
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/30a08aa7-a53b-4bcb-bc0a-e3f584075f1a)
+
+In CSS, each style declaration comprises a property and a value. While this course focuses on a limited set of properties and values, there's much more to explore in CSS for those interested in advancing their skills. The first step in CSS is understanding selectors, which are crucial for targeting specific HTML elements. Without proper selection, understanding properties and values won't be beneficial. Initially, we'll create basic web pages, but by the end of the course, we'll enhance them significantly by incorporating essential styles.
+
+
