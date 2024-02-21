@@ -860,3 +860,24 @@ The text highlights the absence of a strict rule mandating smaller lower-level h
 ### Understanding the Box Model
 -------------------------------
 
+Although the webpage we've built looks okay with the initial CSS adjustments, a notable problem is the insufficient spacing, especially between text and color bars. For instance, the letters in certain words touch the color boxes, while uneven gaps are visible between elements. To tackle these issues effectively, we need to explore spacing properties, which leads us to discuss the CSS box model.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/15215759-83a5-47af-bafd-f01eaf124ed8)
+
+In web development, HTML elements are like boxes that come with inherent properties, even if they're not visibly apparent. These properties—content, border, padding, and margin—serve distinct roles in defining the layout of elements on a webpage. Content refers to the text within the box, while the border is a customizable line surrounding it. Padding creates space between the content and border, essentially pushing the box's edge outward. Margin, positioned outside the border, creates space between elements to avoid overlap. These properties can be applied individually or collectively using shorthand values for efficiency, offering flexibility in webpage layout design.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/4baa3dac-348e-4fa4-8935-7ed7c0661e64)
+
+In CSS, we have different properties like "border," "margin," and "padding" that let us fine-tune how elements look and space out on a webpage. For example, setting "border: 1px solid red" adds a solid red border of one pixel thickness around an element. Using specific versions like "border-left" or "margin-right" allows us to adjust individual sides, while general settings such as "margin: 1rem" affect all four sides equally. We can also use fractional REMs for precise adjustments and shorthand notations to simplify property declarations. While there are many variations, focusing on the main concepts helps avoid getting overwhelmed.
+
+### Working with Border, Padding, and Margin in CSS
+---------------------------------------------------
+
+After learning about border padding and margin, it is time to put that knowledge into practice on our web page.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/5a43859a-0f00-48ba-ae32-927c29e8412b)
+
+The webpage has some layout and spacing issues that need fixing. Firstly, the body element's default margin is removed to resolve spacing problems. The background leaves are repositioned to the bottom by adding them to a footer element. Margins are adjusted for headings, and padding is added for spacing. Background colors and decorative borders are introduced for H2 and H3 headings, with margin and padding tweaks for alignment. To center an image, it's wrapped in a paragraph with text-align set to center. Finally, the border-radius property is used to round element corners, resulting in a visually improved webpage with minimal CSS adjustments.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/cf6cc57f-45dc-4dfe-b885-3536ed517e15)
+
