@@ -764,3 +764,99 @@ RGB format represents colors using Base 10 numbers for red, green, and blue chan
 ![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/f0645998-4464-4f37-a0ab-23bda1ff5145)
 
 If you like DuckDuckGo, it provides color conversions and suggests complementary and analogous colors. Alternatively, you can check out the Color Hex website for exploring shades, tints, and color palettes related to your chosen color. These resources offer various information options depending on your needs.
+
+### Background and Text Color
+-----------------------------
+
+In the exercise files, you'll find links to both the starting and ending states for Sublime Text, as well as extra resources. We'll start by trying out a named color.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/ba6619e0-a9df-412f-87f4-36e36c659e67)
+
+In the H1 section, the pink color is hard to read on a white background. To improve readability, we can change it to teal by referring to the named color chart in the exercise files or selecting a color palette like "Fiery Cracked Earth" in Canva. However, note that Canva's color names may not work in Sublime Text, so it's best to use the hex values provided on the CSS named Colors Chart. For example, if we want to use Canva's teal color for an H2, we copy the hex code and replace the existing color in the CSS.
+
+To change the background color of elements, we use the "background-color" property in CSS and specify a hex color. This colors the background behind those elements. To ensure readability, we also adjust the text color accordingly. For example, if we have a white background, we set the text color to white using the hex code "FFF" or "FFFFFF".
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/11401e4d-edc5-4bd3-a9d5-6e66e40bfe8d)
+
+To style the unordered list (ul), we can use a background color instead of a text color. We select a color like beige from Canva and apply it as the background color for the ul. Additionally, we can style the entire webpage by targeting the "body" HTML element. For example, we can change the background color of the entire page to yellow, giving it a different appearance. In summary, we've learned how to use colors for text and background elements, whether for specific elements or the entire page, and how to choose colors from a named color palette or create custom colors using Canva.
+
+### Understanding Images in CSS
+-------------------------------
+
+Images are commonly used on webpages and can be added using either HTML or CSS. We'll first discuss image formats suitable for the web and then explore how to include images using HTML and CSS.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/996b569d-929d-48ec-824c-76d1ff65b976)
+
+Different image formats such as GIF, PNG, and JPEG have been traditionally used on the web, each with its own characteristics like color limitations, transparency, and animation. Recently, the WebP format has gained popularity for its ability to compress images efficiently without compromising quality, leading to faster website loading times.
+
+It's crucial to choose the appropriate image format to avoid color loss and ensure optimal file sizes. Techniques like adjusting dimensions, trimming unnecessary parts, and reducing file sizes using tools like tinypng.com or Adobe Photoshop are essential for optimizing images and improving website loading speed and user experience.
+
+In HTML, the image element is used to embed images on webpages, serving various purposes like displaying logos or icons. CSS enables the inclusion of background images, which are decorative and not crucial for the webpage's content. These images can be configured to repeat or display specific portions based on design requirements.
+
+### Working with Background Images In CSS
+-----------------------------------------
+
+You're going to insert background images into the webpage. Inside the CSS, there are two background images mentioned as comments. You can view these images by copying the URL from the CSS and pasting it into a new tab. One image has blue dots, and the other has a different design. It's essential to check the images beforehand to ensure they're suitable for use on the webpage.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/80f21302-089b-486f-a9a7-76c1869acf85)
+
+Begin by using the "blue dots" image as the background for the webpage's body element. Despite its smaller size, it adjusts well and creates a wallpaper effect by tiling both horizontally and vertically. Next, use the "growing plants" image, but it tiles across the page, making it hard to read. Improve this by using the background shorthand property with "repeat-X" to repeat it only horizontally. Specify values like "center" or "right" to control where the image starts. To position the image at the bottom of the page, add a height value like "97vh." You can use the same image for other elements without specifying a height.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/20bdc140-556e-4872-baba-e34439ebe44c)
+
+Trying out different background images and properties can enhance how our webpage looks. Changing the bottom property of the background image for the unordered list (UL) to approximately 50% can minimize empty space and showcase more of the plant. These tips offer creative ways to use background images in web design, and while there are additional styling choices, the values provided can spark ideas for integrating them into upcoming website projects.
+
+### Understanding Type in CSS
+-----------------------------
+
+**Understanding Type in CSS**
+
+Many people find unattractive and poorly designed web pages bothersome, particularly due to issues with fonts and spacing. This chapter will focus on discussing fonts, with spacing addressed later, building upon existing knowledge about fonts.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/a61d6ba0-554c-44f1-adae-3632cf6ca5af)
+
+Fonts are commonly categorized into two types: serif and sans serif. Serif fonts have small lines at the ends of letters, aiding readability in printed materials. Sans serif fonts lack these lines, offering a modern appearance and ease of reading, especially for web text. Web fonts vary depending on user devices, leading to font stack usage in CSS for compatibility. Commonly safe fonts include Arial, Helvetica, Verdana, Times, Georgia, Trebuchet MS, and Comic Sans, though the latter is generally advised against.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/17e97cf4-08ae-4fe2-bd87-16210138e4c5)
+
+Google offers a wide range of over a thousand fonts for websites, sourced from the internet and loaded into web browsers for display, ensuring visibility even if users lack them on their devices. However, this course emphasizes basic device fonts. In real-world scenarios, development teams advise on CSS font stack choices. Now, let's move on to coding.
+
+### Applying Type Formatting with CSS
+-------------------------------------
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/518c5061-994d-4b78-9091-491f2b1e95d3)
+
+In this section, we'll focus on improving the appearance of our webpage by changing fonts. By adding a "font-family" property to the "body" element with a font stack like Arial, Helvetica, and Sans-serif, we allow the browser to choose the best available font. Comparing Arial and Helvetica, we notice slight differences in the plus sign's position. While we can't control fonts perfectly across all devices, we aim for readability and decent appearance. It's advised to avoid using too many fonts to maintain a professional look. For headings, we can opt for a contrasting font like Georgia or Times New Roman for h1.
+
+To enhance readability, especially for longer text on screens, we can use a contrasting serif font for headings and a Sans-serif font for paragraphs. Experimenting with properties like "font-style: italic" for italics and setting font weight to normal removes boldness from headings, giving them a distinct appearance. By replacing Times font with Sans-serif, the overall appearance of the page notably improves, making it easier to read.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/80790832-7401-48bf-9d68-0e25a653bbbf)
+
+### Understanding and Applying Size in CSS
+------------------------------------------
+
+Until now, the text size on our webpage was set by the default style sheet of the web browser. While these sizes are not necessarily problematic, there are occasions where you might want to alter them or apply them only to specific text sections.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/66ccdd0a-d078-49c8-b619-1e194f3f7cde)
+
+In web design, there are two main types of sizing: absolute and relative. Absolute sizes, such as points or pixels, always stay the same no matter the screen size, whereas relative units like percentages or R-E-M adjust based on the page size. Relative units are favored by web designers because they scale proportionally when the page is zoomed in, offering greater flexibility in design.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/79cc5ce7-f56a-4215-bc2d-3c0dfc187fe5)
+
+Web developers usually favor using the "rem" unit for font sizes. In simple terms, 1 rem equals 16 pixels. So, if a font size is specified as 1.5 rem, it's roughly 24 pixels (1.5 multiplied by 16), and if it's set as 0.8 rem, it's approximately 13 pixels (0.8 multiplied by 16). Fortunately, there are online calculators available to automate these conversions, making it unnecessary to calculate them manually. Let's explore one of these calculators.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/6a65628a-fecb-44ef-8181-2bcf33619d0a)
+
+The Point to REM Converter tool on codebeautify.org facilitates the conversion of font sizes between various units like pixels, rem, em, and percent. It's particularly handy for designers who find it easier to think in pixels or receive sizes in points from graphic designers, which is common in print design. For instance, if you input 18 pixels into the calculator, it converts it to 1.125 rem, which is the suggested format. The tool also offers conversions for em and percent, but rem is widely preferred for font sizes. It's crucial to keep in mind that rem values can include decimals. With this knowledge of conversion, you can ensure consistency between your design vision and the appearance on your web page.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/54400e6f-06e6-4c74-8565-b7ae5fd60592)
+
+The tutorial offers a glimpse of the webpage and discusses font size adjustments. For h1 headings, the "font-size" property allows specifying values like 2rem or 3rem to observe changes. Tweaking the body font size impacts all text except explicitly defined headings due to CSS's cascading and inheritance principles, elucidated later. Custom font sizes can be applied to specific elements like h3 to personalize text appearance.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/f724a2fd-b338-4bc5-92a9-6626d29624df)
+
+The text highlights the absence of a strict rule mandating smaller lower-level headings compared to h1. Preferences may lead to scenarios where h1 is smaller than h3. Heading sizes are primarily governed by browser defaults, but preserving proper heading order for accessibility and document structure remains vital. CSS provides a flexible solution for adjusting heading sizes, eliminating the need to modify HTML directly.
+
+### Understanding the Box Model
+-------------------------------
+
