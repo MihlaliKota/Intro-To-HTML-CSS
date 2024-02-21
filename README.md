@@ -663,4 +663,41 @@ HTML defines the structure of a webpage using elements like paragraphs, headings
 
 In CSS, each style declaration comprises a property and a value. While this course focuses on a limited set of properties and values, there's much more to explore in CSS for those interested in advancing their skills. The first step in CSS is understanding selectors, which are crucial for targeting specific HTML elements. Without proper selection, understanding properties and values won't be beneficial. Initially, we'll create basic web pages, but by the end of the course, we'll enhance them significantly by incorporating essential styles.
 
+## Unit 2
 
+### Writing Your First Comment and Element Selector
+---------------------------------------------------
+
+**Writing Your First Comment and Element Selector**
+
+To start working with CSS, we'll begin by writing basic CSS code for your document. In the Exercise Files, find the link to the starting Sublime Text file labeled "01-01-start: Writing Your First Element Selector." Once opened, you'll see a set of headings, subheadings, and paragraphs to work with. Before delving into CSS, it's beneficial to review the HTML structure you aim to style and identify any patterns that can be utilized in your CSS code.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/d97cd5d1-7e7b-4e53-8c33-9cc40ef1ff5e)
+
+In the exercise file example, there's an HTML structure featuring headings (H1, H2, H3), paragraphs, and notes. Comments differentiate HTML and CSS comments. CSS selectors target elements for styling. For instance, using "P" as a selector makes all paragraphs blue by setting the color property. Similarly, "H2" as a selector makes all H2 headings red. Try styling H1 and H3 elements with your preferred colors. Check the 01-01-End state in Sublime Text for reference. Congratulations, you're now learning to write CSS!
+
+### Writing a Class Selector
+----------------------------
+
+Currently, all paragraphs are blue, but what if we want a specific paragraph to be green, or just a part of it? We can achieve this by assigning classes to HTML elements. A class is an attribute added to an HTML element to provide extra details about it, allowing us to style specific elements differently.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/12b057bf-d7e4-4cee-a7d6-aac739e0f528)
+
+To make the first paragraph green, we add a class attribute to the paragraph tag in HTML and name it "intro," then in CSS, we use ".intro" to set the color to green. For styling a specific part of a paragraph differently, we use a span element with a class attribute. In HTML, we enclose the sentence we want to style differently with a span tag and class="guarantee," and in CSS, we use ".guarantee" to set the color to orange and font-weight to bold.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/43475e11-2f78-4a41-bae0-d5d02ef2202f)
+
+You need to style the sentence "Philanthropy is extremely important to us" to be black, bold, and all uppercase. A class name "important" has been set in the HTML, along with the CSS property "text-transform: uppercase" to make the text uppercase. Now, you need to select that sentence in the HTML and add CSS to make it black and bold.
+
+### Grouping Selectors
+----------------------
+
+There are occasions when you need to apply the same style to various selectors. For instance, if you want all the paragraphs on a page to be green, you can achieve this using CSS.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/79405184-76f6-494f-97b9-164b1c6b4512)
+
+If you've successfully followed along, consider extending your styling to make list items green. To achieve this in CSS, you'd typically write something like <i>li {color: green;}</i>. While this approach works, it could become repetitive if you have many other elements needing the same style. Grouping selectors can help here. Instead of writing separate styles for <i>p</i> and <i>li<i>, you can combine them using a comma like so: <i>p, li {color: green;}</i>. This instructs the web browser to apply the style to all paragraphs and list items individually. Additionally, you can also apply styles using classes.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/beec1645-76a6-4232-9f3d-1728ca8ad61c)
+
+Suppose we want to style the words "mineral water" in green. We can achieve this by adding ".mineral" to the selector in CSS, where ".mineral" is the name of our class. Then, in the HTML code, we apply this class specifically to the desired text using <span class="mineral">mineral water</span>. This approach ensures that the words "mineral water" appear in green. When selectors are grouped together with commas in CSS, it means each item separated by a comma is treated as a separate selector. Whether it's paragraphs, list items, or elements with the class "mineral," they will all be styled accordingly, in this case, as green text.
