@@ -701,3 +701,66 @@ If you've successfully followed along, consider extending your styling to make l
 ![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/beec1645-76a6-4232-9f3d-1728ca8ad61c)
 
 Suppose we want to style the words "mineral water" in green. We can achieve this by adding ".mineral" to the selector in CSS, where ".mineral" is the name of our class. Then, in the HTML code, we apply this class specifically to the desired text using <span class="mineral">mineral water</span>. This approach ensures that the words "mineral water" appear in green. When selectors are grouped together with commas in CSS, it means each item separated by a comma is treated as a separate selector. Whether it's paragraphs, list items, or elements with the class "mineral," they will all be styled accordingly, in this case, as green text.
+
+### Descendent Selectors
+------------------------
+
+In our CodePen, besides headings and paragraphs, there are also two lists visible under the "ingredients" section.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/efa21cce-1811-45ce-84b2-9d58ff20f51b)
+
+There are two lists in our content: one ordered, with mineral water as the main ingredient, and another unordered, listing various mineral water flavors. To differentiate them visually, we'll style the ordered list items as blue and bold, and the unordered list items as purple and uppercase. Instead of assigning a class to each list item, we'll use a descendant selector for a simpler approach.
+
+A descendant selector lets us choose list items that are descendants of either an ordered or unordered list. This relationship can be direct or indirect, akin to a family tree.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/c693264a-c1f5-4938-8ef6-2387d9f30af7)
+
+To apply styles using a descendant selector, we use code like "OL LI" (without the body tag). The space between "OL" and "LI" signifies the descendant relationship. We can then set the color to blue and the font weight to bold, affecting only the list items within the ordered list. CSS selectors involving multiple terms are read from right to left, meaning "any list item descended from an ordered list." Now, try writing a style to select unordered list items and make them purple and uppercase, then check the final code pen in the exercise files to verify your answer.
+
+## Unit 3
+
+### Identify a Color Scheme
+---------------------------
+
+**Identify a Color Scheme**
+
+Choosing a color scheme for your website is essential, and while creating one yourself is an option, there are resources available if you struggle with color choices. Canva, a user-friendly graphic design tool, offers three methods for creating color palettes. One method involves extracting colors from an image, like a picture of donuts, to use for your webpage. Another option is to try their demo image for generating a color palette. These tools can be helpful for non-designers in selecting appealing colors for their websites.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/97fd2208-d255-4a25-a7b0-2f9727c408fc)
+
+In Canva, you can create a color palette by uploading an image and extracting colors directly from it. For example, a photo of people in a canoe may yield colors like dark green, pinkish tones, and lighter grays. By experimenting with different demo images or uploading your own, you can discover color schemes that suit your website.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/d84d1714-0c97-4a55-adf1-34daaf05d1d0)
+
+On the Canva website, you can explore numerous color palettes, including one called "Rosettes and Cream." Clicking on it reveals a picture that inspired the palette, displaying its colors and suggesting related combinations. If you desire additional colors like purple, you can use these palettes as a foundation for creating your own designs.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/c8fa500b-74e5-4a12-a6e4-68912a61477f)
+
+Users have the option to create a custom color palette by clicking a link at the bottom of the page. This takes them to a page where they can choose an initial color. Based on this choice, the system generates a color combination, such as a complementary color, which is the opposite color on the color wheel, if aqua blue is selected.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/a5f89028-baed-4ef4-9485-afd1972f3b09)
+
+Users have the option to explore various color combinations like monochromatic, analogous, triadic, and tetradic, which help find matching colors. They can adjust color saturation or browse categorized color palettes. Keywords like "birthday" filter palettes based on associations, and users can also upload images to generate palettes.
+
+### Formatting Color in CSS
+---------------------------
+
+Once a color palette is chosen, the next step is to integrate it into the code. Previously, the course covered named colors, which are colors with specific names assigned in CSS. However, named colors represent only a fraction of the available colors online.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/6da9d25d-96e2-451d-8983-5ef83d7d3348)
+
+The color chart showcases named colors available for use in code, but it's crucial to understand that there are only about 130 named colors. If your desired color isn't named, you'll need to use hex codes, also known as hex values or hex format, which are a common way to represent colors online. Hexadecimal is shortened to "hex" for this purpose.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/f78a7d87-68d5-4fd6-a600-8989d77c0502)
+
+Hex values, often six digits long, combine numbers (0-9) and letters (A-F). They represent colors in the RGB (red, green, blue) format, where the first two digits signify red intensity, the next two green intensity, and the final two blue intensity. Each digit corresponds to a value from 0 to 255.
+
+Canva's color palettes provide hex values, which along with color names, are commonly used for web development. When editing CSS, you might encounter shorthand syntax for hex values. For example, "7778899" can be shortened to "789" if each two-digit pair is the same, but this applies only when the digits are identical.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/5a2bdaf8-7ecd-43c2-af65-a29b44050236)
+
+RGB format represents colors using Base 10 numbers for red, green, and blue channels. It can also be shown as an eight-digit hex number or RGBA, where the last number (e.g., "CC" in hex or "0.8" in RGB) represents Alpha, determining transparency. HSL or HSLA formats may be used occasionally, especially in platforms like Squarespace. Converting color formats is easy: input the color value into Google, and it offers a color picker with various conversions.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/f0645998-4464-4f37-a0ab-23bda1ff5145)
+
+If you like DuckDuckGo, it provides color conversions and suggests complementary and analogous colors. Alternatively, you can check out the Color Hex website for exploring shades, tints, and color palettes related to your chosen color. These resources offer various information options depending on your needs.
