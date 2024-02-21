@@ -635,11 +635,11 @@ For non-header cells, `<td>` elements are used.
 ![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/1c8a5149-993d-4162-ae77-caf1732d1be8)
 
 
-Let's create a simple HTML table using a basic example. We start with a <table> element to define the table and close it at the end. The table has six rows: one for the header and five for different types of birds. Each row is marked up with <tr> tags. Inside each row, we use <td> tags to contain the data for each column, like the bird's name, color, diet, and an image.
+Let's create a simple HTML table using a basic example. We start with a <table> element to define the table and close it at the end. The table has six rows: one for the header and five for different types of birds. Each row is marked up with `<tr>` tags. Inside each row, we use `<td>` tags to contain the data for each column, like the bird's name, color, diet, and an image.
 
-To style the table, we can apply CSS to customize its appearance instead of relying on the browser's default styling. For the header row, we use <th> instead of <td> to mark it as a header cell. We don't need to use all caps for the header content; regular words are fine, and we can style them with CSS as needed.
+To style the table, we can apply CSS to customize its appearance instead of relying on the browser's default styling. For the header row, we use `<th>` instead of `<td>` to mark it as a header cell. We don't need to use all caps for the header content; regular words are fine, and we can style them with CSS as needed.
 
-These are the basics of creating an HTML table: using the <table> element to start the table, <tr> for rows, <th> for header cells, and <td> for data cells. There are more advanced features like spanning rows or columns, defining table sections, or adding captions, which can be explored in deeper HTML table tutorials.
+These are the basics of creating an HTML table: using the `<table>` element to start the table, `<tr>` for rows, `<th>` for header cells, and `<td>` for data cells. There are more advanced features like spanning rows or columns, defining table sections, or adding captions, which can be explored in deeper HTML table tutorials.
 
 ## Week 3
 
