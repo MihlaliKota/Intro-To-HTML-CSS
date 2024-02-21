@@ -696,7 +696,7 @@ There are occasions when you need to apply the same style to various selectors. 
 
 ![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/79405184-76f6-494f-97b9-164b1c6b4512)
 
-If you've successfully followed along, consider extending your styling to make list items green. To achieve this in CSS, you'd typically write something like <i>li {color: green;}</i>. While this approach works, it could become repetitive if you have many other elements needing the same style. Grouping selectors can help here. Instead of writing separate styles for <i>p</i> and <i>li<i>, you can combine them using a comma like so: <i>p, li {color: green;}</i>. This instructs the web browser to apply the style to all paragraphs and list items individually. Additionally, you can also apply styles using classes.
+If you've successfully followed along, consider extending your styling to make list items green. To achieve this in CSS, you'd typically write something like <i>li {color: green;}</i>. While this approach works, it could become repetitive if you have many other elements needing the same style. Grouping selectors can help here. Instead of writing separate styles for <i>p</i> and <i>li</i>, you can combine them using a comma like so: <i>p, li {color: green;}</i>. This instructs the web browser to apply the style to all paragraphs and list items individually. Additionally, you can also apply styles using classes.
 
 ![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/beec1645-76a6-4232-9f3d-1728ca8ad61c)
 
