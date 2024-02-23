@@ -881,3 +881,21 @@ The webpage has some layout and spacing issues that need fixing. Firstly, the bo
 
 ![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/cf6cc57f-45dc-4dfe-b885-3536ed517e15)
 
+## Unit 5
+
+### Advanced CSS Properties and Concepts
+----------------------------------------
+
+**Styling Links With CSS**
+
+Links are crucial online and are commonly styled in blue with underlines, changing to purple once clicked. This chapter specifically looks into links within Sublime Text.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/d99b6843-9be7-42d4-8b83-a09e638a7d4e)
+
+Currently, there's an issue with links appearing unvisited in Chrome's guest tab, even after visiting web pages. This is because default styles in browsers override specified styles, like changing text color. To fix this, we'll focus on modifying HTML and CSS to customize link colors. By targeting the "a" anchor tag and setting a new color, such as 648fff for blue, we can ensure all links, including visited ones, adopt this style instead of the default blue and purple.
+
+In CSS, we can customize link styles, especially when users interact with them. For instance, the "a:hover" state allows us to change the color to pink (fe6100) and remove underlines when hovering over links. This wasn't possible without the hover style. Additionally, we can differentiate between visited and unvisited links by defining styles for "a:link" and "a:visited." Unvisited links can be set to a nice blue color, while visited links can have a lovely shade of purple (785ef0). These changes make it clear which links have been visited, and the hover style remains intact for interactive user experiences.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/a7b2eae2-bc06-42cf-8f10-8dcdb4703679)
+
+When designing web pages, it's crucial to consider how links are styled. For links within lengthy text passages, it's beneficial to retain underlines. This helps users, especially those with colorblindness or visual impairments, to distinguish links from regular text. However, in areas like navigation bars where users anticipate clickable links, underlines can be omitted for a neater look. These guidelines aim to improve the appearance of web page links while ensuring accessibility for all users.
