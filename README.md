@@ -899,3 +899,28 @@ In CSS, we can customize link styles, especially when users interact with them. 
 ![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/a7b2eae2-bc06-42cf-8f10-8dcdb4703679)
 
 When designing web pages, it's crucial to consider how links are styled. For links within lengthy text passages, it's beneficial to retain underlines. This helps users, especially those with colorblindness or visual impairments, to distinguish links from regular text. However, in areas like navigation bars where users anticipate clickable links, underlines can be omitted for a neater look. These guidelines aim to improve the appearance of web page links while ensuring accessibility for all users.
+
+### Inheritance in CSS
+----------------------
+
+Understanding inheritance and specificity in CSS can be tricky, especially for beginners like you. Although these concepts were briefly covered earlier in the course, we'll now delve deeper into inheritance to give you a clearer understanding of how it functions in CSS.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/4ebaf292-cc31-4090-bd7c-e82245a53166)
+
+In this section, we're revisiting the styling process for the earliest version of the web page, which includes a few demonstration links. As you're already familiar with the code, let's discuss what happens as styles are applied. When setting the font family to Arial, Helvetica, sans-serif for the body element, you'll notice that the entire page changes to Arial font. This is because font-related styles usually inherit, ensuring consistency across the document. However, styles related to the box model, like borders, do not inherit and only affect the specified element. For instance, applying a border to the "*" selector, which selects every element on the page, results in a chaotic appearance, highlighting the importance of non-inheritance for certain styles.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/c9c9d686-8dd4-42c1-ade4-83662e4d9138)
+
+In CSS, it's crucial to control how styles are inherited across elements. While there are cases where inheriting styles is useful, like the example given, most developers prefer to apply styles only once to avoid unintended effects. Being aware of and managing inheritance is essential for developers, although it may not be a concern for the average user.
+
+### Debugging CSS with Borders and Background Colours
+-----------------------------------------------------
+
+In CSS, when you're facing challenges with styling elements and things aren't working as expected, debugging becomes essential. One useful trick is to apply visual cues like background colors or borders to the elements you're working on. For example, if you're styling an unordered list (UL) in HTML and you want to understand its exact position on the page, adding a border with CSS, such as "border: 2px solid red," can help. This border visually outlines the UL, revealing its full width across the body element.
+
+![image](https://github.com/MihlaliKota/Intro-To-HTML-CSS/assets/133135575/c18e8455-061b-44e9-943e-a5dcf8908868)
+
+Let's compare the unordered list (UL) to the link (A) inside the list item (LI). The UL and LI, as block elements, fill the entire width of their container, while the link (A), an inline element, only occupies the width of its content. This distinction is important in CSS styling. To ensure a hover effect spans the entire width of the element, consider changing the link (A) to a list item (LI), which behaves like a block-level element. This allows the hover effect to cover the entire document width. However, if clicking seems limited to the link's text, applying "display: block" to the link (A) selector can stretch it across the page, ensuring a consistent hover effect across the entire list.
+
+We addressed the issue by trying out different borders and background colors, which is a helpful strategy for troubleshooting CSS code. Initially, the design might not appear pleasing to the eye, but the key is to prioritize functionality first. Once the functionality is confirmed, you can enhance the design by eliminating any unattractive elements and creating a visually appealing layout.
+
